@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do
-  "Hello world!"
+  send_file File.join(settings.public_folder, 'hello.txt')
 end
